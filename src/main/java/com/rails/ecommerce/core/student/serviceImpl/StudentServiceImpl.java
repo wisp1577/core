@@ -19,8 +19,8 @@ public class StudentServiceImpl  implements StudentService {
 
 	
 	@Override
-	public PaginationList findAllPage(String cardNo, String jxid, String beginDate, String endDate, int pageNo, int pageSize) throws Exception {
-		return studentDao.findAllPage(cardNo, jxid, beginDate, endDate, pageNo, pageSize);
+	public PaginationList findAllPage(String cardNo, String jxid, String classSign, String statusName, int pageNo, int pageSize) throws Exception {
+		return studentDao.findAllPage(cardNo, jxid, classSign, statusName, pageNo, pageSize);
 	}
 
 

@@ -6,6 +6,6 @@ import com.rails.ecommerce.core.student.domain.StudentInfo;
 
 public interface StudentDao extends GenericDao<StudentInfo> {
 
-	public PaginationList findAllPage(String cardNo, String jxid, String beginDate, String endDate, int pageNo, int pageSize) throws Exception;
+	public PaginationList findAllPage(String cardNo, String jxid, String classSign, String statusName, int pageNo, int pageSize) throws Exception;
 
 }
