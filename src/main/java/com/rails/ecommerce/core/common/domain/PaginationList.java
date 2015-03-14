@@ -2,14 +2,11 @@ package com.rails.ecommerce.core.common.domain;
 
 import java.util.List;
 
-
 public class PaginationList {
 	
 	private int total; //总记录数据
 	
 	private List<?> rows; //行的集合
-
-
 
 	public int getTotal() {
 		return total;
@@ -27,10 +24,4 @@ public class PaginationList {
 		this.rows = rows;
 	}
 
-
-
-	
-	
-	
-	
 }
