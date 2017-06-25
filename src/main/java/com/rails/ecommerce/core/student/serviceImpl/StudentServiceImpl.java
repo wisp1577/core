@@ -19,11 +19,15 @@ public class StudentServiceImpl  implements StudentService {
 
 	
 	@Override
-	public PaginationList findAllPage(String cardNo, String jxid, String classSign, String statusName, int pageNo, int pageSize) throws Exception {
-		return studentDao.findAllPage(cardNo, jxid, classSign, statusName, pageNo, pageSize);
+	public PaginationList findAllPage(String cardNo, String cnbh, String jxid, String classSign, String statusName, int pageNo, int pageSize) throws Exception {
+		return studentDao.findAllPage(cardNo, cnbh, jxid, classSign, statusName, pageNo, pageSize);
 	}
 
-
+	@Override
+	public PaginationList findAllCheck(String cardNo, String jxid, String classSign, String statusName, int pageNo, int pageSize, int usexs) throws Exception {
+		return studentDao.findAllCheck(cardNo, jxid, classSign, statusName, pageNo, pageSize, usexs);
+	}
+	
 	@Override
 	public StudentInfo save(StudentInfo entity) throws Exception {
 		return studentDao.save(entity);
